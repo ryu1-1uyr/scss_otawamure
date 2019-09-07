@@ -1,11 +1,11 @@
-$blue_0 : rgba(0,223,250,0.99);
-$blue_1 : rgba(0,180,203,0.99);
-$blue_2 : rgba(0,140,157,0.99);
-$blue_3 : rgba(0,95,106,0.99);
-$grey_0 : rgba(52,56,56,1);
-$green : rgba(18,103,107,0.99);
+$blue_0: rgba(0, 223, 250, 0.99);
+$blue_1: rgba(0, 180, 203, 0.99);
+$blue_2: rgba(0, 140, 157, 0.99);
+$blue_3: rgba(0, 95, 106, 0.99);
+$grey_0: rgba(52, 56, 56, 1);
+$green: rgba(18, 103, 107, 0.99);
 
-.flexbox{
+.flexbox {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -50,7 +50,7 @@ html, body {
 
 // content color
 
-.motion-type-2{
+.motion-type-2 {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -71,12 +71,15 @@ html, body {
     &:nth-child(1) {
       background: $blue_1;
     }
+
     &:nth-child(2) {
       background: $blue_3;
     }
+
     &:nth-child(3) {
       background: $grey_0;
     }
+
     p {
       color: aliceblue;
     }
@@ -87,12 +90,15 @@ html, body {
   transform: scale(0);
   width: 900px;
   height: 900px;
+
   &:nth-child(1) {
     background: $blue_1;
   }
+
   &:nth-child(2) {
     background: $blue_3;
   }
+
   &:nth-child(3) {
     background: $grey_0;
     width: 900px;
@@ -104,45 +110,41 @@ html, body {
 
 .motion-type-1 {
   div:nth-child(1) {
-    animation:
-            scale 1.2s ease 0.5s forwards ,
-            scale_width 1.5s ease 1.5s forwards,
-            scale_height 1.5s ease 2.5s forwards,
-            baybay 0.01s ease 8s forwards;
-
+    animation: scale 1.2s ease 0.5s forwards,
+    scale_width 1.5s ease 1.5s forwards,
+    scale_height 1.5s ease 2.5s forwards,
+    baybay 0.01s ease 8s forwards;
 
 
   }
+
   div:nth-child(2) {
-    animation:
-            scale_1 1.3s ease 0.7s forwards,
-            scale_gucha_2 4.5s ease 2.8s forwards,
-            baybay 0.01s ease 8s forwards;
+    animation: scale_1 1.3s ease 0.7s forwards,
+    scale_gucha_2 4.5s ease 2.8s forwards,
+    baybay 0.01s ease 8s forwards;
 
 
   }
 
   div:nth-child(3) {
-    animation:
-            scale_2 1s ease 0.9s forwards,
-            scale_gucha 4.5s ease 2.8s forwards,
-            baybay 0.01s ease 8s forwards;
+    animation: scale_2 1s ease 0.9s forwards,
+    scale_gucha 4.5s ease 2.8s forwards,
+    baybay 0.01s ease 8s forwards;
 
   }
 }
 
 .motion-type-2 {
   div:nth-child(1) {
-    animation:
-            view_content_2 9s ease 8s forwards,
-            tiisaku 2s ease 8.01s forwards,
-            move_1 2s ease 8.5s forwards,
-            remove_1 1.5s ease 10.7s forwards,
-            hurueru_2 1s ease 13s forwards,
-            shake 2s ease 14s,
-            rotate_something_3 2s ease 16.9s forwards ,
-            move_rotated_3 2s ease 19.3s forwards,
-            baybay 2s ease 28s forwards;
+    animation: view_content_2 9s ease 8s forwards,
+    tiisaku 2s ease 8.01s forwards,
+    move_1 2s ease 8.5s forwards,
+    remove_1 1.5s ease 10.7s forwards,
+    hurueru_2 1s ease 13s forwards,
+    shake 2s ease 14s,
+    rotate_something_3 2s ease 16.9s forwards,
+    move_rotated_3 2s ease 19.3s forwards,
+    baybay 2s ease 28s forwards;
 
 
     p {
@@ -150,17 +152,17 @@ html, body {
       padding-top: 40px;
     }
   }
+
   div:nth-child(2) {
-    animation:
-            view_content_2 9s ease 8s forwards,
-            tiisaku 2s ease 8.01s forwards,
-            move_2 2s ease 8.5s forwards,
-            remove_2 1.5s ease 10.7s forwards,
-            hurueru 1s ease 13s forwards,
-            shake 2s ease 14s,
-            rotate_something_2 2s ease 16.9s forwards ,
-            move_rotated_2 2s ease 19.3s forwards,
-            baybay 3s ease 28s forwards;
+    animation: view_content_2 9s ease 8s forwards,
+    tiisaku 2s ease 8.01s forwards,
+    move_2 2s ease 8.5s forwards,
+    remove_2 1.5s ease 10.7s forwards,
+    hurueru 1s ease 13s forwards,
+    shake 2s ease 14s,
+    rotate_something_2 2s ease 16.9s forwards,
+    move_rotated_2 2s ease 19.3s forwards,
+    baybay 3s ease 28s forwards;
 
 
     p {
@@ -168,29 +170,30 @@ html, body {
       padding-top: 40px;
     }
   }
+
   div:nth-child(3) {
-    animation:
-            view_content_2 9s ease 8s forwards,
-            tiisaku 2s ease 8.01s forwards,
-            move_3 2s ease 8.5s forwards,
-            hurueru_3 1s ease 13s forwards,
-            shake 0.5s ease 15.5s ,
-            shake 0.5s ease 16s ,
-            shake_Y 0.5s ease 16.2s ,
-            rotate_something 2s ease 16.9s forwards ,
-            move_rotated 2s ease 19.4s forwards,
-            rotate_dekkaku 2s ease 26.3s forwards ,
-            final_baybay 4.5s ease 30s forwards;
+    animation: view_content_2 9s ease 8s forwards,
+    tiisaku 2s ease 8.01s forwards,
+    move_3 2s ease 8.5s forwards,
+    hurueru_3 1s ease 13s forwards,
+    shake 0.5s ease 15.5s,
+    shake 0.5s ease 16s,
+    shake_Y 0.5s ease 16.2s,
+    rotate_something 2s ease 16.9s forwards,
+    move_rotated 2s ease 19.4s forwards,
+    rotate_dekkaku 2s ease 26.3s forwards,
+    final_baybay 4.5s ease 30s forwards;
 
     p {
       font-size: 0px;
       padding-top: 72px;
-      &:before{
+
+      &:before {
         content: "y";
-        animation:
-                change_unko 2s ease 14.2s forwards,
-                change_hello 4s ease 22s forwards ;
+        animation: change_unko 2s ease 14.2s forwards,
+        change_hello 4s ease 22s forwards;
       }
+
       animation: ookiku_moji 1s ease 8.3s forwards;
     }
   }
@@ -216,8 +219,11 @@ html, body {
     transform: scale(0.9);
   }
 }
+
 @keyframes scale_2 {
-  0% {transform: scale(0);}
+  0% {
+    transform: scale(0);
+  }
   //10%{transform: scale(0.1) rotateZ(90deg);}
   //20%{transform: scale(0.2);}
   //30%{transform: scale(0.3) rotateX(90deg);}
@@ -227,7 +233,8 @@ html, body {
   //70%{transform: scale(0.7) rotateX(90deg);}
   //80%{transform: scale(0.9);}
   //90%{transform: rotateZ(-90deg);}
-  100%{transform: scale(0.8) rotateZ(45deg);
+  100% {
+    transform: scale(0.8) rotateZ(45deg);
   }
 }
 
@@ -241,6 +248,7 @@ html, body {
     background: $blue_0;
   }
 }
+
 @keyframes scale_height {
   from {
     transform: scaleY(1) scaleX(3);
@@ -261,33 +269,77 @@ html, body {
   //  transform: rotateZ(45deg) scale(6);
   //}
 
-  0% {transform: rotateZ(45deg) scale(0.8);}
+  0% {
+    transform: rotateZ(45deg) scale(0.8);
+  }
 
-  10%{transform: scale(0.1) rotateZ(90deg);}
-  20%{transform: scale(0.2);}
-  30%{transform: scale(0.3) rotateX(90deg);}
-  40%{transform: scale(0.4);}
-  50%{transform: rotateZ(-90deg);}
-  60%{transform: scale(0.6);}
-  70%{transform: scale(0.7) rotateX(90deg);}
-  80%{transform: scale(0.9);}
-  90%{transform: rotateZ(-90deg);}
-  100%{transform: rotateZ(45deg) scale(6);}
+  10% {
+    transform: scale(0.1) rotateZ(90deg);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  30% {
+    transform: scale(0.3) rotateX(90deg);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: rotateZ(-90deg);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(0.7) rotateX(90deg);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  90% {
+    transform: rotateZ(-90deg);
+  }
+  100% {
+    transform: rotateZ(45deg) scale(6);
+  }
 }
 
 @keyframes scale_gucha_2 {
-  0% {transform: rotateZ(45deg) scale(0.9);}
+  0% {
+    transform: rotateZ(45deg) scale(0.9);
+  }
 
-  10%{transform: scale(1.2) rotateY(45deg);}
-  20%{transform: scale(1);}
-  30%{transform: scale(0.9) rotateX(75deg);}
-  40%{transform: scale(0.8);}
-  50%{transform: rotateZ(90deg);}
-  60%{transform: scale(0.5) rotateX(45deg);}
-  70%{transform: scale(0.7) rotateX(45deg);}
-  80%{transform: scale(1);}
-  90%{transform: scale(1.5) rotateZ(90deg);}
-  100%{transform: rotateZ(-45deg) scale(1);}
+  10% {
+    transform: scale(1.2) rotateY(45deg);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9) rotateX(75deg);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  60% {
+    transform: scale(0.5) rotateX(45deg);
+  }
+  70% {
+    transform: scale(0.7) rotateX(45deg);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.5) rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(-45deg) scale(1);
+  }
 }
 
 @keyframes baybay {
@@ -307,16 +359,18 @@ html, body {
   to {
     display: flex;
   }
-  
+
 }
+
 @keyframes move_1 {
   from {
-    margin-top:0;
+    margin-top: 0;
   }
   to {
     margin-top: -240px;
   }
 }
+
 @keyframes remove_1 {
   from {
     margin-top: -240px;
@@ -325,9 +379,10 @@ html, body {
     margin-top: 0;
   }
 }
+
 @keyframes move_2 {
   from {
-    margin-top:0;
+    margin-top: 0;
 
   }
   to {
@@ -335,6 +390,7 @@ html, body {
 
   }
 }
+
 @keyframes remove_2 {
   from {
     margin-top: 240px;
@@ -348,7 +404,7 @@ html, body {
 
 @keyframes move_3 {
   from {
-    padding-top:0;
+    padding-top: 0;
   }
   to {
     padding-top: 0;
@@ -356,43 +412,75 @@ html, body {
 }
 
 @keyframes tiisaku {
-  from{
+  from {
     transform: scale(10);
   }
-  to{
+  to {
     transform: scale(1);
   }
 }
 
 @keyframes ookiku_moji {
-  from{
+  from {
     font-size: 0;
   }
-  to{
+  to {
     font-size: 40px;
   }
 }
 
 @keyframes hurueru {
-  0% {transform: translate(0px, 0px) rotateZ(0deg)}
-  25% {transform: translate(20px, 20px) rotateZ(100deg)}
-  50% {transform: translate(0px, 20px) rotateZ(0deg)}
-  75% {transform: translate(20px, 0px) rotateZ(-100deg)}
-  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
+  25% {
+    transform: translate(20px, 20px) rotateZ(100deg)
+  }
+  50% {
+    transform: translate(0px, 20px) rotateZ(0deg)
+  }
+  75% {
+    transform: translate(20px, 0px) rotateZ(-100deg)
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
 }
+
 @keyframes hurueru_2 {
-  0% {transform: translate(0px, 0px) rotateZ(0deg)}
-  25% {transform: translate(-20px, -20px) rotateZ(-100deg)}
-  50% {transform: translate(0px, -20px) rotateZ(0deg)}
-  75% {transform: translate(-20px, 0px) rotateZ(100deg)}
-  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
+  25% {
+    transform: translate(-20px, -20px) rotateZ(-100deg)
+  }
+  50% {
+    transform: translate(0px, -20px) rotateZ(0deg)
+  }
+  75% {
+    transform: translate(-20px, 0px) rotateZ(100deg)
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
 }
+
 @keyframes hurueru_3 {
-  0% {transform: translate(0px, 0px) rotateZ(0deg)}
-  25% {transform: translate(-40px, -20px) rotateZ(-90deg)}
-  50% {transform: translate(0px, 40px) rotateZ(0deg)}
-  75% {transform: translate(40px, 0px) rotateZ(90deg)}
-  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
+  25% {
+    transform: translate(-40px, -20px) rotateZ(-90deg)
+  }
+  50% {
+    transform: translate(0px, 40px) rotateZ(0deg)
+  }
+  75% {
+    transform: translate(40px, 0px) rotateZ(90deg)
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
 }
 
 @keyframes change_unko {
@@ -419,49 +507,52 @@ html, body {
     font-size: 46px;
   }
 }
+
 @keyframes shake {
-  from{
+  from {
     transform: translateX(0px);
   }
 
-  25%{
+  25% {
     transform: translateX(-10px);
   }
 
-  50%{
+  50% {
     transform: translateX(20px);
   }
 
-  75%{
+  75% {
     transform: translateX(-10px);
   }
 
-  to{
+  to {
     transform: translateX(0px);
   }
 }
+
 @keyframes shake_Y {
-  from{
+  from {
     transform: translateY(0px);
   }
 
-  25%{
+  25% {
     transform: translateY(-10px);
   }
 
-  50%{
+  50% {
     transform: translateY(20px);
   }
 
-  75%{
+  75% {
     transform: translateY(-10px);
   }
 
-  to{
+  to {
     transform: translateY(0px);
   }
 }
-@keyframes rotate_something  {
+
+@keyframes rotate_something {
   from {
     transform: rotateZ(0deg) scale(1);
   }
@@ -478,14 +569,15 @@ html, body {
     transform: rotateZ(0deg) scale(2.2);
   }
 }
-@keyframes rotate_something_2  {
+
+@keyframes rotate_something_2 {
   from {
     transform: rotateZ(0deg) scale(1);
   }
   25% {
     transform: rotateZ(90deg) scale(1.5);
   }
-  50%{
+  50% {
     transform: rotateZ(180deg) scale(1.8);
   }
   75% {
@@ -495,14 +587,15 @@ html, body {
     transform: rotateZ(360deg) scale(2.4);
   }
 }
-@keyframes rotate_something_3  {
+
+@keyframes rotate_something_3 {
   from {
     transform: rotateZ(0deg) scale(1);
   }
   25% {
     transform: rotateZ(-90deg) scale(1.7);
   }
-  50%{
+  50% {
     transform: rotateZ(-180deg) scale(2);
   }
   75% {
@@ -517,7 +610,7 @@ html, body {
   from {
     transform: scale(2.6) scaleX(1);
   }
-  50%{
+  50% {
     transform: scale(2.6) scaleX(3);
   }
   to {
@@ -529,7 +622,7 @@ html, body {
   from {
     transform: scale(2.4) scaleX(1);
   }
-  55%{
+  55% {
     transform: scale(2.4) scaleX(3);
   }
   to {
@@ -539,10 +632,10 @@ html, body {
 
 @keyframes move_rotated {
   from {
-    transform: scale(2.2) ;
+    transform: scale(2.2);
   }
-  50%{
-    transform: scale(2.3) ;
+  50% {
+    transform: scale(2.3);
   }
   to {
     transform: scale(4);
@@ -599,14 +692,14 @@ html, body {
   }
 }
 
-@keyframes rotate_dekkaku  {
+@keyframes rotate_dekkaku {
   from {
     transform: rotateZ(0deg) scale(4);
   }
   25% {
     transform: rotateZ(90deg) scale(8);
   }
-  50%{
+  50% {
     transform: rotateZ(180deg) scale(10);
   }
   75% {
@@ -616,11 +709,12 @@ html, body {
     transform: rotateZ(360deg) scale(15);
   }
 }
+
 @keyframes final_baybay {
   0% {
     transform: scale(15);
   }
-  10%{
+  10% {
     transform: scale(6);
   }
   20% {
@@ -637,18 +731,18 @@ html, body {
     transform: scale(4) rotateY(90deg);
   }
   60% {
-    transform:  rotateX(0deg);
+    transform: rotateX(0deg);
   }
   70% {
-    transform:  rotateX(5deg);
+    transform: rotateX(5deg);
 
   }
   80% {
-    transform:  rotateX(10deg);
+    transform: rotateX(10deg);
 
   }
   90% {
-    transform:  rotateX(15deg);
+    transform: rotateX(15deg);
   }
   92% {
     transform: scale(3) rotateX(30deg);
@@ -673,23 +767,35 @@ html, body {
 }
 
 @keyframes hurueruyo {
-  0% {transform: translate(0px, 0px) rotateZ(0deg)}
-  25% {transform: translate(4px, 4px) rotateZ(3deg)}
-  50% {transform: translate(0px, 4px) rotateZ(0deg)}
-  75% {transform: translate(4px, 0px) rotateZ(-3deg)}
-  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
+  25% {
+    transform: translate(4px, 4px) rotateZ(3deg)
+  }
+  50% {
+    transform: translate(0px, 4px) rotateZ(0deg)
+  }
+  75% {
+    transform: translate(4px, 0px) rotateZ(-3deg)
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg)
+  }
 }
-footer{
+
+footer {
   text-align: center;
 }
+
 #myname {
   text-decoration: none;
-  color:$grey_0;
+  color: $grey_0;
   display: inline-block;
   text-align: center;
   font-size: 40px;
 
   &:hover {
-    animation: hurueruyo .1s  infinite;
+    animation: hurueruyo .1s infinite;
   }
 }
