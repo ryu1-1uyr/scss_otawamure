@@ -86,32 +86,73 @@ html, body {
   transform: scale(0);
   width: 900px;
   height: 900px;
+  &:nth-child(1) {
+    background: $blue_1;
+  }
+  &:nth-child(2) {
+    background: $blue_3;
+  }
+  &:nth-child(3) {
+    background: $grey_0;
+    width: 900px;
+    height: 900px;
+  }
 }
 
 // time line
 
-.motion-type-1{
+.motion-type-1 {
   div:nth-child(1) {
     animation:
             scale 1.2s ease 0.5s forwards ,
             scale_width 1.5s ease 1.5s forwards,
-            scale_height 1.5s ease 2.5s forwards;
+            scale_height 1.5s ease 2.5s forwards,
+            baybay 0.01s ease 8s forwards;
+
 
 
   }
   div:nth-child(2) {
     animation:
             scale_1 1.3s ease 0.7s forwards,
-            scale_gucha_2 4.5s ease 2.8s forwards;
+            scale_gucha_2 4.5s ease 2.8s forwards,
+            baybay 0.01s ease 8s forwards;
+
 
   }
 
   div:nth-child(3) {
     animation:
             scale_2 1s ease 0.9s forwards,
-            scale_gucha 4.5s ease 2.8s forwards;
+            scale_gucha 4.5s ease 2.8s forwards,
+            baybay 0.01s ease 8s forwards;
 
   }
+}
+
+.motion-type-2 {
+  div:nth-child(1) {
+    animation:
+            view_content_2 9s ease 8s forwards,
+            tiisaku 2s ease 8.01s forwards,
+            move_1 2s ease 8.5s forwards,
+            move_2 1.5s ease 10.7s forwards;
+  }
+  div:nth-child(2) {
+    animation:
+            view_content_2 9s ease 8s forwards,
+            tiisaku 2s ease 8.01s forwards,
+            move_2 2s ease 8.5s forwards,
+            move_1 1.5s ease 10.7s forwards;
+
+  }
+  div:nth-child(3) {
+    animation:
+            view_content_2 9s ease 8s forwards,
+            tiisaku 2s ease 8.01s forwards,
+            move_3 2s ease 8.5s forwards;
+  }
+
 }
 
 // keyframe
@@ -205,4 +246,66 @@ html, body {
   80%{transform: scale(1);}
   90%{transform: scale(1.5) rotateZ(90deg);}
   100%{transform: rotateZ(-45deg) scale(1);}
+}
+
+@keyframes baybay {
+  from {
+    transform: scale(6);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes view_content_2 {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+  
+}
+@keyframes move_1 {
+  from {
+    margin-top:0;
+  }
+  to {
+    margin-top: -240px;
+  }
+}
+@keyframes move_2 {
+  from {
+    margin-top:0;
+
+  }
+  to {
+    margin-top: 240px;
+
+  }
+}
+
+@keyframes move_3 {
+  from {
+    padding-top:0;
+  }
+  to {
+    padding-top: 0;
+  }
+}
+
+@keyframes tiisaku {
+  from{
+    transform: scale(10);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+@keyframes hurueru {
+  0% {transform: translate(0px, 0px) rotateZ(0deg)}
+  25% {transform: translate(2px, 2px) rotateZ(1deg)}
+  50% {transform: translate(0px, 2px) rotateZ(0deg)}
+  75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
