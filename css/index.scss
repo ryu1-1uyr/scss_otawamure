@@ -4,6 +4,19 @@ $blue_2 : rgba(0,140,157,0.99);
 $blue_3 : rgba(0,95,106,0.99);
 $grey_0 : rgba(52,56,56,0.99);
 
+.flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  align-items: center;
+  border: 1px solid #aaa;
+  text-align: center;
+  //height: 150px;
+  //padding: 10px;
+  //margin: 20px;
+}
 
 html, body {
   margin: 0;
