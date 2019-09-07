@@ -79,18 +79,6 @@ html, body {
 
 // time line
 
-//.motion-type-1 div:nth-child(1) {
-//  animation: scale 1.2s ease 0.5s forwards;
-//}
-//
-//.motion-type-1 div:nth-child(2) {
-//  animation: scale_1 1.3s ease 0.7s forwards;
-//}
-//
-//.motion-type-1 div:nth-child(3) {
-//  animation: scale_2 1s ease 0.9s forwards;
-//}
-
 .motion-type-1{
   div:nth-child(1) {
     animation:
@@ -101,12 +89,16 @@ html, body {
 
   }
   div:nth-child(2) {
-    animation: scale_1 1.3s ease 0.7s forwards;
+    animation:
+            scale_1 1.3s ease 0.7s forwards,
+            scale_gucha_2 4.5s ease 2.8s forwards;
 
   }
 
   div:nth-child(3) {
-    animation: scale_2 1s ease 0.9s forwards;
+    animation:
+            scale_2 1s ease 0.9s forwards,
+            scale_gucha 4.5s ease 2.8s forwards;
 
   }
 }
@@ -151,17 +143,55 @@ html, body {
 
   }
   to {
-    transform: scaleX(2);
+    transform: scaleX(3);
     background: $blue_0;
   }
 }
 @keyframes scale_height {
   from {
-    transform: scaleY(1) scaleX(2);
+    transform: scaleY(1) scaleX(3);
 
   }
   to {
-    transform: scaleY(2) scaleX(2);
+    transform: scaleY(2) scaleX(3);
     background: $blue_1;
   }
+}
+
+@keyframes scale_gucha {
+  //from {
+  //  transform: rotateZ(45deg) scale(0.8) ;
+  //
+  //}
+  //to {
+  //  transform: rotateZ(45deg) scale(6);
+  //}
+
+  0% {transform: rotateZ(45deg) scale(0.8);}
+
+  10%{transform: scale(0.1) rotateZ(90deg);}
+  20%{transform: scale(0.2);}
+  30%{transform: scale(0.3) rotateX(90deg);}
+  40%{transform: scale(0.4);}
+  50%{transform: rotateZ(-90deg);}
+  60%{transform: scale(0.6);}
+  70%{transform: scale(0.7) rotateX(90deg);}
+  80%{transform: scale(0.9);}
+  90%{transform: rotateZ(-90deg);}
+  100%{transform: rotateZ(45deg) scale(6);}
+}
+
+@keyframes scale_gucha_2 {
+  0% {transform: rotateZ(45deg) scale(0.9);}
+
+  10%{transform: scale(1.2) rotateY(45deg);}
+  20%{transform: scale(1);}
+  30%{transform: scale(0.9) rotateX(75deg);}
+  40%{transform: scale(0.8);}
+  50%{transform: rotateZ(90deg);}
+  60%{transform: scale(0.5) rotateX(45deg);}
+  70%{transform: scale(0.7) rotateX(45deg);}
+  80%{transform: scale(1);}
+  90%{transform: scale(1.5) rotateZ(90deg);}
+  100%{transform: rotateZ(-45deg) scale(1);}
 }
