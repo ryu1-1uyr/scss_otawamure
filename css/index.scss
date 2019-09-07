@@ -39,23 +39,12 @@ html, body {
   //left: 0;
   width: 900px;
   height: 900px;
-  .square {
-    top: 200px;
-    width: 900px;
-    height: 900px;
-  }
 
   div {
     position: absolute;
     top: 0;
     left: 0;
-    width: 900px;
-    height: 900px;
   }
-}
-
-.motion_content div {
-  transform: scale(0);
 }
 
 // content color
